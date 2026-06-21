@@ -1,0 +1,17 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project
+/artifacts/
+*.log
+Cargo.lock  # For reproducible app builds, consider committing; ignored here for initial flexibility
