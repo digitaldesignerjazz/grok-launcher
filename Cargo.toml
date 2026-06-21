@@ -1,0 +1,21 @@
+[package]
+name = "grok-launcher"
+version = "0.1.0"
+edition = "2021"
+authors = ["Sven Normen <sven@esslinger-co.example>"]
+description = "Grok Launcher - Rust + egui native app for xAI Grok, AI agent swarms (Lyra/Xen), NovaNet/xMesh, QNET blockchain, and prototypes"
+readme = "README.md"
+license = "MIT OR Apache-2.0"  # TBD - align with C-Corp
+repository = "https://github.com/digitaldesignerjazz/grok-launcher"
+
+[dependencies]
+eframe = { version = "0.28", features = ["default"] }
+# Future expansions:
+# tokio = { version = "1", features = ["full"] }
+# reqwest = { version = "0.12", features = ["json"] }
+# serde = { version = "1.0", features = ["derive"] }
+# egui_extras = "0.28"
+
+[profile.release]
+opt-level = 3
+lto = true
